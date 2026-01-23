@@ -8,8 +8,8 @@ console.log(incr(2));
 //Exercise
 const addSum = (f,m) =>{
   let sum = 0;
-  f.array.forEach(f1 => {
-    m.array.forEach(m1 =>{
+  f.forEach(f1 => {
+    m.forEach(m1 =>{
       if(m1 % f1 === 0){
         sum += m1;
       }
