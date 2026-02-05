@@ -18,10 +18,11 @@ const addSum = (f,m) =>{
   return sum;
 }
 
-console.log("This is the sum for multiples: "+ addSum([3,5],[1,2,3,4,5,6,7,8,9]))
-fetchAndDisplay(url);
+console.log("This is the sum for multiples: "+ addSum([3,5],[1,2,3,4,5,6,7,8,9]));
 
 let url = "https://pokeapi.co/api/v2/pokemon/ditto";
+fetchAndDisplay(url);
+
 async function fetchAndDisplay(url) {
   const response = await fetch(url);
   const data = await response.json();
