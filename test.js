@@ -18,6 +18,18 @@ const addSum = (f,m) =>{
   return sum;
 }
 
+function calculate() {
+const f = document.getElementById("fArray").value
+        .split(",")
+        .map(n => Number(n.trim()));
+
+  const m = document.getElementById("mArray").value
+    .split(",")
+    .map(n => Number(n.trim()));
+
+    const ans = addSum(f,m);
+    document.getElementById("result").textContent = ans;
+}
 console.log("This is the sum for multiples: "+ addSum([3,5],[1,2,3,4,5,6,7,8,9]));
 
 let url = "https://pokeapi.co/api/v2/pokemon/ditto";
